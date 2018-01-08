@@ -1,0 +1,682 @@
+            /* ---------- Responsive Portfolio CSS ---------- */
+
+
+            /* ---------- Mobile + Burger Menu ---------- */
+
+
+body{
+    font-family: Raleway, GillSans, "Gill Sans MT", Helvetica, sans-serif;
+    text-align: left;
+    color: #2f3e46;
+    padding: 1em;
+    background-color: #ffffff;
+    margin-top: 80px; /* Add a top margin to avoid content overlay */
+}
+
+                    /* ----- STYLED PAGE LAYOUT DIV + MAIN ----- */
+.page {
+    max-width: 900px;
+    min-width: 100px;
+    margin: 10px auto 10px auto;
+    border: none;
+    background-color: #ffffff;
+    padding-top: 0.9em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 2em;
+}
+
+.indexmain{
+    display: grid;
+    grid-gap: 0px;
+}
+
+                        /* ----- Nav Header / Index banner ----- */
+#banner{
+    grid-column: 1/-1;
+    width: auto;
+    overflow: hidden;
+    max-width: 95%;
+    display: block;
+    padding: 1em;
+    padding-top: 3.5em;
+}
+
+img header{
+    max-width: 5em;
+    margin: auto;
+    border: none;
+    opacity: 1;
+    padding-right: 60em;
+    padding-left: 3em;
+    opacity: 0.5;
+}
+
+.weheader {
+    display: none;}
+
+.monsterheader {
+    display: none;}
+
+.uxheader {
+    display: none;}
+
+.videoheader {
+    display: none;}
+
+                   /* ----- NAVIGATION BURGER BAR ETC. ----- */
+.fixbar {
+    position: fixed;
+    top: 20px;
+    left: 0;
+    right: 0;
+}
+
+input{
+    display: none;
+}
+
+label{
+    cursor: pointer;
+    color: #cc4f31;
+    display: block;
+    padding: 0;
+    font-size: 2em;
+    padding-left: 1em;
+    padding-top: 0.2em;
+}
+
+nav{
+    max-height: 0;
+    overflow: hidden;
+}
+
+input:checked ~ nav{
+    max-height: 500px;
+}
+
+nav ul{
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 0em;
+    font-family: VT323, Helvetica, sans-serif;
+    font-size: 1.5em;
+    background-color: #933b25;
+    opacity: 0.8;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:link {
+    color: #cc4f31;
+}
+
+nav a:visited {
+    color: #ffffff;
+}
+
+nav a:hover {
+    color: #f9f9f9;
+    background-color: #00885f;
+    transition: all 1s;
+}
+
+nav a:active{
+    color: yellow;
+}
+
+                      /* ----- TEXT, h1/h2 ETC. ----- */
+
+.indexh1 {
+    color: #ef9fb7;
+    font-size: 3em;
+    background-color: #f9f9f9;
+    letter-spacing: 0.2em;
+    text-align: center;
+    text-transform: uppercase;
+    overflow-wrap: break-word;
+    margin: 15px auto 15px auto;
+    max-width: 450px;
+}
+
+h1 {
+    color: #2f3e46;
+    font-family: VT323, Geo, "arial black";
+    font-size: 1.8em;
+    /*background-color: #dbf1e5;*/
+    letter-spacing: 0.5em;
+    text-align: left;
+    text-transform: uppercase;
+    overflow-wrap: break-word;
+    margin: 15px auto 15px auto;
+    max-width: 600px;
+    padding-top: 5px;
+}
+
+h2 {
+    color: #2f3e46;
+    font-family: tk-calder-dark, Raleway, Geo;
+    font-size: 1.3em;
+    margin: 15px auto 15px auto;
+    font-weight: bold;
+    max-width: 600px;
+    letter-spacing: 0.2em;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+h3 {
+    color: #2f3e46;
+    font-family: tk-calder-dark, Raleway, Geo;
+    font-size: 1em;
+    margin: 15px auto 15px auto;
+    font-weight: bold;
+    max-width: 600px;
+    letter-spacing: 0.2em;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+p {
+    color: #2f3e46;
+    font-family: tk-calder-dark, Raleway, Helvetica, sans-serif;
+    font-size: 1em;
+    margin: 10px auto 10px auto;
+    max-width: 600px;
+    text-transform: none;
+    line-height: 140%;
+}
+
+.styledli{
+    font-family: tk-proxima-nova, tk-calder-dark, VT323, Raleway, Helvetica, sans-serif;
+    font-size: 1em;
+    margin: 10px auto 10px auto;
+    max-width: 600px;
+    text-transform: none;
+
+}
+
+.indextext {
+    color: #2f3e46;
+    font-family: tk-calder-dark, Raleway, GillSans, "Gill Sans MT", Helvetica, sans-serif;
+    font-size: 1em;
+    margin: 10px auto 10px auto;
+    max-width: 450px;
+    text-transform: uppercase;
+}
+
+                /* ----- IMAGES, VECTORS, FIGURES ETC. ----- */
+
+main p img {
+    width: 100%;
+    height: auto;
+}
+
+.indexaside{
+    max-width: 20em;
+    min-width: 10em;
+    display: block;
+    padding: 0em;
+    margin: 0 auto;
+    border: none;
+    padding-bottom: 2em;
+    padding-top: 4em;
+}
+
+.aboutaside{
+    max-width: 25em;
+    min-width: 10em;
+    display: block;
+    padding: 0em;
+    margin: 0 auto;
+    border: none;
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+
+.imageasset {
+    text-transform: uppercase;
+    color: #e5b008;
+    text-align: center;
+    text-decoration: none;
+}
+
+figure {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: none;
+    max-width: 95%;
+}
+
+img {
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+figcaption {
+    font-size: 0.6em;
+    /*font-style: italic;*/
+    color: #2f3e46;
+    font-family: Raleway, Helvetica, sans-serif;
+    border-top: 5px;
+    text-align: center;
+    max-width: 300px;
+    margin: 10px auto 10px auto;
+    padding-bottom: 1em;
+}
+
+.vector {
+    width: auto;
+    overflow: hidden;
+    max-width: 20em;
+    padding-top: 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 7px;
+    text-align: center;
+    font-family: Raleway, sans-serif, Helvetica;
+}
+
+.vectorindex {
+    width: auto;
+    overflow: hidden;
+    max-width: 10em;
+    padding-top: 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 7px;
+    text-align: center;
+    font-family: Raleway, sans-serif, Helvetica;
+}
+
+.vector2 {
+    width: 3em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 7px;
+    text-align: center;
+    font-family: Raleway, sans-serif, Helvetica;
+}
+
+.totop {
+    text-transform: uppercase;
+    font-family: VT323;
+    font-size: 1.1em;
+    color: #cc4f31;
+    text-align: center;
+    text-decoration: none;
+    width: 8em;
+    margin: auto;
+    border: none;
+    display: block;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+footer {
+    text-align: center;
+    font-size: 0.6em;
+    font-family: Raleway, Helvetica, sans-serif;
+    padding: 2em;
+}
+
+#indexfooter{
+    grid-column: 1/-1;
+    padding-top: 4em;
+    font-size: 1em;
+    text-transform: uppercase;
+
+}
+
+             /* ------------------ LIGHTBOX ------------------ */
+
+.fitlightimages {
+    max-width: 700px;
+    /*min-width: 100px;*/
+    margin: auto;
+    padding-left: 3.4em;
+    border: none;
+    background-color: #ffffff;
+    padding-top: 1em;
+}
+
+.row > .column {
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 0.3em;
+
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+    display: inline-block;
+    padding: 0.3em;
+    margin: 0em;
+    width: 20%;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #ffffff;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #ffffff;
+    margin: auto;
+    padding: 0;
+    max-width: 600px;
+    max-height: 400px;
+}
+
+/* The Close Button */
+.close {
+  color: black;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 14px;
+    margin-top: -50px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 1.2em;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a green background */
+.prev:hover,
+.next:hover {
+    background-color: #00885f;
+    opacity: 1;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #ffffff;
+    font-size: 12px;
+    padding: 10px 14px;
+    position: absolute;
+    top: 0;
+    display:none;
+}
+
+/* Caption text */
+.caption-container {
+    text-align: center;
+    padding: 2px 16px;
+    color: #ffffff;
+    font-size: 1em;
+    text-transform: uppercase;
+
+}
+
+img.demo {
+    opacity: 0.6;
+    max-width: 70%;
+    padding: 1em;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+img.hover-shadow {
+    transition: 0.3s
+}
+
+.hover-shadow:hover {
+    box-shadow: 5px 5px #00885f;
+    cursor: pointer;
+}
+
+
+/* ---------- DESKTOP /BREAKPOINT - No Burger Menu/ TABLET ---------- */
+
+@media all and (min-width:45em){
+
+/* ---------- INDEX PAGE (FRONT PAGE) ---------- */
+
+.banner{
+    grid-column: 1/-1;
+}
+
+header img {
+    max-width: 25em;
+    letter-spacing: 0.2em;
+    margin: auto;
+    grid-column: 1/-1;
+}
+
+nav {
+    max-height: 3em;
+}
+
+nav li{
+    display: inline-block;
+    margin-right: 17px;
+    margin-left: 17px;
+}
+
+label{
+    display: none;
+}
+
+.indexmain{
+    grid-template-columns: repeat(12, 1fr);
+}
+
+nav li{
+    display: inline-block;
+    grid-column: 1/-1;
+}
+
+.indexnav{
+    grid-column: -1/1;
+}
+
+aside{
+    grid-column: -1/9;
+    padding-left: 2em;
+    margin: 2em;
+}
+
+.indexarticle{
+    grid-column: 1/9;
+}
+
+
+}
+
+
+/* ---------- ABOUT PAGE ---------- */
+
+.aboutmain{
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.aboutnav{
+    grid-column: -1/1;
+}
+
+.aboutarticle{
+    grid-column: 1/9;
+}
+
+/*---------- ANIMATION PAGE ---------- */
+
+.monsterheader {
+    max-width: 10em;
+    min-width: 4em;
+    letter-spacing: 0.2em;
+    display: block;
+    margin: auto;
+    grid-column: 1/-1;
+    padding-top: 0.6em;
+    padding-right: 60em;
+    padding-left: 2em;
+    opacity: 0.3;
+}
+
+/*---------- UX PAGE ---------- */
+
+.uxheader {
+    max-width: 20em;
+    min-width: 12em;
+    letter-spacing: 0.2em;
+    display: block;
+    margin: auto;
+    grid-column: 1/-1;
+    padding-top: 0.6em;
+    padding-right: 60em;
+    padding-left: 1.7em;
+    opacity: 0.3;
+}
+
+
+/*---------- VIDEO PAGE ---------- */
+
+.videoheader {
+    max-width: 52em;
+    min-width: 15em;
+    letter-spacing: 0.2em;
+    display: block;
+    margin: auto;
+    grid-column: 1/-1;
+    padding-top: 0.2em;
+    padding-right: 60em;
+    padding-left: 1.5em;
+    opacity: 0.4;
+}
+
+
+/*---------- WEB DESIGN PAGE ---------- */
+
+.webheader {
+    max-width: 22em;
+    min-width: 7em;
+    letter-spacing: 0.2em;
+    display: block;
+    margin: auto;
+    grid-column: 1/-1;
+    padding-top: 0.6em;
+    padding-right: 60em;
+    padding-left: 1.4em;
+    opacity: 0.5;
+}
+
+
+/*
+
+***HOW TO MAKE PICTURES FLOAT IN/WITHIN TEXT***
+
+main h1+p+p+ img{
+    width: 10%
+float: left;
+}
+
+***MAKE THE PICTURE STAY IN PLACE BY***
+
+(remember to add class: class="clearfix" in elements)
+
+clearfix {
+clear: both;
+}
+
+
+***HOW TO IMPORT FONTS FROM GOOGLE***
+
+@font-face {
+    font-family: 'FontName';
+    src: url('../path/to/the/font-file');
+}
+
+***USING THE CLASS-SELECTOR***
+
+You define it by . (dot) in CSS. In HTML you create it by typing class="" within an element.
+Ex:
+
+HTML: <h1 class="test1">MODERNISM</h1>
+
+CSS: .test1 {
+    font-family:monospace;
+}
+
+***USING THE ID-SELECTOR***
+
+You define it by # in CSS. In HTML you create it by typing id="" within an element.
+Ex:
+
+HTML:
+<h1 id="test1">MODERNISM</h1>
+
+CSS: #test1 {
+    font-family:monospace;
+}
+*/
